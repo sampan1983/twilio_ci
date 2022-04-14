@@ -152,13 +152,19 @@ $db['default'] = array(
 
 	'dsn'	=> '',
 
-	'hostname' => 'localhost',
+	// 'hostname' => 'localhost',
+	'hostname' => 'us-cdbr-east-05.cleardb.net',
+	// 'username' => 'singupc1_sms',
 
-	'username' => 'singupc1_sms',
 
-	'password' => '@$-b[S_cT;xr',
+	'username' => 'bbe0de1f90fdfb',
 
-	'database' => 'singupc1_twilio_sms',
+	// 'password' => '@$-b[S_cT;xr',
+	'password' => '83b1a864',
+
+
+	// 'database' => 'singupc1_twilio_sms',
+	'database' => 'heroku_027aaf6065d241f',
 
 	'dbdriver' => 'mysqli',
 
