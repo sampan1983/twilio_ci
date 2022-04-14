@@ -644,21 +644,13 @@
 
 
 
-  <li class="nav-item">
-
-            <a class="nav-link" href="<?php echo base_url(); ?>Voice_Broadcast"><i class="icon-call-out"></i> Voice Call</a>
-
-          </li> 
+ 
 
  
 
  
 
-          <li class="nav-item">
-
-            <a class="nav-link" href="<?php echo base_url(); ?>Bulk_Voice_Broadcast"><i class="icon-call-out"></i> Bulk Voice Broadcast</a>
-
-          </li>
+         
 
  
 
@@ -776,13 +768,7 @@
 
 
 
-<li class="nav-item">
 
-
-            <a class="nav-link" href="<?php echo base_url(); ?>Call_Logs"><i class="icon-call-out"></i> Call Logs</a>
-
-
-          </li>
 
 
 
@@ -794,12 +780,7 @@
 
 
 
-<li class="nav-item">
 
-            <a class="nav-link" href="<?php echo base_url(); ?>Queued_Calls"><i class="icon-call-out"></i>Queued Calls</a>
-
-
-</li>
 
 
 
