@@ -812,7 +812,7 @@ table
                 error:function(xhr,status,error)
                 {
                   console.log(xhr.responseText);
-                  location.reload();
+                   // location.reload();
                   
                 }
 
