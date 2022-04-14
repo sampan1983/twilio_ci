@@ -121,7 +121,7 @@ use Twilio\Rest\Client;
 
 					}
 
-		   $insert_msg_log = "INSERT INTO tapp_sent_msg_log(sms_number,twilio_num,message,images,bulk_name,date_time,user_id) VALUES ('$number','$twilio_num','$message','$img', '$unique_id', now(),'".$_SESSION['id']."')";
+		   $insert_msg_log = "INSERT INTO tapp_sent_msg_log(sms_number,twilio_num,message,images,date_time,user_id) VALUES ('$number','$twilio_num','$message','$img', now(),'".$_SESSION['id']."')";
 			$tapp_msg_log = $this->db->query($insert_msg_log);
 			if ($tapp_msg_log==true) 
 			{

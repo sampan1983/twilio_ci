@@ -797,11 +797,11 @@ table
                   console.log(r);
                   if (r=='message sent') 
                   {
-                    // location.reload();
+                    location.reload();
                   }
                   else if (r=='blacklist')
                   {
-                  // location.reload();
+                  location.reload();
                   }
                   else
                   {
@@ -812,7 +812,7 @@ table
                 error:function(xhr,status,error)
                 {
                   console.log(xhr.responseText);
-                   // location.reload();
+                   location.reload();
                   
                 }
 
