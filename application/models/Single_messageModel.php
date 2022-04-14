@@ -33,7 +33,7 @@ use Twilio\Rest\Client;
 
             $check_blacklist = "select * from tapp_blacklist where user_id = '".$_SESSION['id']."' and number = '$number'";
            	$blacklist = $this->db->query($check_blacklist);
-			if (mysqli_num_rows($blacklist)>0) {
+			if ($blacklist->num_rows()>0) {
 				$_SESSION['single_blacklist'] = 'Sorry! This number is blacklisted';
 				return 'blacklist';
 			}
