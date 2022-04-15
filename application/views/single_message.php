@@ -217,11 +217,13 @@ table
 
                       <label class="col-form-label" for="appendedInput">Choose Sender Type:</label>
                       <br>
+                     
+                      
+                     From Twilio Number
+                      <input type="radio" name="sender_type" value="num" onclick="twilionum('num')" checked>
 
                       Copilot
-                      <input type="radio" name="sender_type" value="cp" onclick="twilionum('cp')" checked>
-                     From Twilio Number
-                      <input type="radio" name="sender_type" value="num" onclick="twilionum('num')">
+                      <input type="radio" name="sender_type" value="cp" onclick="twilionum('cp')" >
 
                       <div class="controls">
 
@@ -921,7 +923,7 @@ table
 
 <script type="text/javascript">
 
-  twilionum('cp');
+  twilionum('num');
 
   function twilionum(val){
     if(val=='cp')

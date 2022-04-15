@@ -692,10 +692,13 @@ table
                       <label class="col-form-label" for="appendedInput">Choose Sender Number:</label>
                         <br>
 
-                      Copilot
-                      <input type="radio" name="sender_type" value="cp" onclick="twilionum('cp')" checked>
+                    
                      From Number
-                      <input type="radio" name="sender_type" value="num" onclick="twilionum('num')">
+                      <input type="radio" name="sender_type" value="num" onclick="twilionum('num')" checked>
+
+                      Copilot
+                      <input type="radio" name="sender_type" value="cp" onclick="twilionum('cp')" >
+
 
 
                       <div class="controls">
@@ -1869,7 +1872,7 @@ function select_n(str) {
 
 <script type="text/javascript">
 
-  twilionum('cp');
+  twilionum('num');
 
   function twilionum(val){
 
