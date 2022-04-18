@@ -852,11 +852,11 @@ table
 
                      <td><?php echo $data[$i]['phone_number'] ?></td>
 
-                     <td><?php echo $data[$i]['	name'] ?></td>
+                     <td><?php echo $data[$i]['name'] ?></td>
 
-                     <td><?php echo $data[$i]['	date'] ?></td>
-                     <td><?php echo $data[$i]['	time'] ?></td>
-                     <td><?php echo $data[$i]['		action'] ?></td>
+                     <td><?php echo $data[$i]['date'] ?></td>
+                     <td><?php echo $data[$i]['time'] ?></td>
+                     <td><?php echo $data[$i]['action'] ?></td>
 
                      
 
