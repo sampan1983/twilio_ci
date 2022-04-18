@@ -143,6 +143,44 @@ class Clients extends CI_Controller {
 	$allDataInSheet = $objPHPExcel->getActiveSheet()->toArray(null,true,true,true);
 	$arrayCount = count($allDataInSheet);  // Here get total count of row in that Excel sheet
 	for($i=2;$i<=$arrayCount;$i++){
+		$type = trim($allDataInSheet[$i]["A"]);
+		$phone_number = trim($allDataInSheet[$i]["B"]);
+		$name = trim($allDataInSheet[$i]["C"]);
+		$date = trim($allDataInSheet[$i]["D"]);
+		$time = trim($allDataInSheet[$i]["E"]);
+		$action = trim($allDataInSheet[$i]["F"]);
+		$action_result = trim($allDataInSheet[$i]["G"]);
+		$result_description = trim($allDataInSheet[$i]["H"]);
+		$Duration = trim($allDataInSheet[$i]["I"]);
+        
+
+    $sm1=str_replace("(", "", $phone_number);
+	$sm2=str_replace(")", "", $sm1);
+	$sm3=str_replace("-", "", $sm2);
+	$sm4=str_replace(" ", "", $sm3);
+	$sm5=str_replace(",", "", $sm4);
+	$sm6=str_replace("+", "", $sm5);
+	$sm7=str_replace(".", "", $sm6);
+	$sm8=str_replace("/", "", $sm7);
+	$sm9=str_replace(";", "", $sm8);
+	$sm10=str_replace(":", "", $sm9);
+	$sm11=str_replace("!", "", $sm10);
+	$sm12=str_replace("@", "", $sm11);
+	$sm13=str_replace("*", "", $sm12);
+	$sm14=str_replace("$", "", $sm13);
+	$sm15=str_replace("%", "", $sm14);
+	$sm16=str_replace("^", "", $sm15);
+	$sm17 = str_replace("&", "", $sm16);
+	$sm19 = str_replace("<", "", $sm17);
+	$sm20 = str_replace(">", "", $sm19);
+	$sm21 = str_replace("<", "", $sm20);
+	$sm22 = str_replace("?", "", $sm21);
+	$sm23 = str_replace("_", "", $sm22);
+	$phone_number = str_replace("#", "", $sm23);
+
+
+
+
 	$first_name = trim($allDataInSheet[$i]["A"]);
 	$name=str_replace("(", "", $first_name);
 	$name=str_replace(")", "", $name);
@@ -198,7 +236,7 @@ class Clients extends CI_Controller {
 	$check_dup = $this->db->query($check_num);
 	if($check_dup->num_rows()<1 && $sms_number != ''){ 
 	$counter = $counter + 1;
-	$sql=$this->db->query("insert into tapp_tbl_clients (sender,first_name,last_name,email,country,date_time,address,postal_code,job_title,job_location,lead_date,interest_level,source,status,user_id) values('".$sms_number."','".$first_name."','','".$email."','',now(),'".$candidate_location."','','".$job_title."','".$job_location."','".$date_lead."','".$interest_level."','".$source."','".$status."','".$_SESSION['id']."')");
+	$sql=$this->db->query("insert into tapp_tbl_clients (type,phone_number,name,date,time,action,action_result,result description,duration) values('".$type."','".$phone_number."','','".$name."','',".$date.",'".$time."','','".$action."','".$action_result."','".$result_description."','".$Duration."')");
 	}
 	else{
 	$sql = false;
