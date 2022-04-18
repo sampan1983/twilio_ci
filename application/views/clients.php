@@ -846,6 +846,7 @@ table
                             $address=str_replace('^', '"', $add); ?>
 
                      <tr>
+                       
                      <td><input type='checkbox' name='contact[]' id='con' class='checkboxes' onclick='select_single_contact(this)' value="<?php echo $data[$i]['id'] ?>" > </td>
 
                      <td><?php echo $data[$i]['type'] ?></td>
