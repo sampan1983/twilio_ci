@@ -821,12 +821,15 @@ table
                 <thead>
                   <tr>
                    <th>Select All&nbsp;<input type="checkbox" name="contact[]" value="select_all_contact " id="select_all_contact" onclick="selector1234()" ></th>
-                    <th>Mobile Number</th>
+                    <th>Type</th>
+                    <th>Phone Number</th>
                     <th>Name</th>
-                    <th>Email</th>
-                    <th>Address</th> 
-                    <th>Date</th>
+                    <th>Date</th> 
+                    <th>Time</th>
                     <th>Action</th>
+                    <th>Action Result</th>
+                    <th>Result Description</th>
+                    <th>Duration</th>
                  </tr>
                 </thead>
                 <tbody>
@@ -845,15 +848,21 @@ table
                      <tr>
                      <td><input type='checkbox' name='contact[]' id='con' class='checkboxes' onclick='select_single_contact(this)' value="<?php echo $data[$i]['id'] ?>" > </td>
 
-                     <td><?php echo $data[$i]['sender'] ?></td>
+                     <td><?php echo $data[$i]['type'] ?></td>
 
-                     <td><?php echo $data[$i]['name'] ?></td>
+                     <td><?php echo $data[$i]['phone_number'] ?></td>
 
-                     <td><?php echo $data[$i]['email'] ?></td>
+                     <td><?php echo $data[$i]['	name'] ?></td>
 
-                     <td><?php echo $add ?></td>
+                     <td><?php echo $data[$i]['	date'] ?></td>
+                     <td><?php echo $data[$i]['	time'] ?></td>
+                     <td><?php echo $data[$i]['		action'] ?></td>
 
-                    <td><?php echo $data[$i]['date_time'] ?></td>
+                     
+
+                    <td><?php echo $data[$i]['action_result'] ?></td>
+                    <td><?php echo $data[$i]['result description'] ?></td>
+                    <td><?php echo $data[$i]['duration'] ?></td>
 
                     <td><a href = '#' class='btn btn-info edit' data-id = '<?php echo $data[$i]['id'] ?>' data-sender = '<?php echo $data[$i]['sender'] ?>' data-name = '<?php echo $data[$i]['first_name'] ?>' data-email = '<?php echo $data[$i]['email'] ?>' data-address = '<?php echo $data[$i]['address'] ?>'><i class = 'fa fa-edit'> </i></a><a href = '#' class='btn btn-danger delete' data-id = '<?php echo $data[$i]['id'] ?>' > <i class = 'fa fa-trash-o' > </i></a></td>
                      </tr>
