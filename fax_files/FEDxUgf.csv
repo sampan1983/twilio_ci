@@ -1,0 +1,5 @@
+<br />
+<b>Notice</b>:  Undefined index: num_msg in <b>C:\xampp\htdocs\smsapp\export_clients.php</b> on line <b>3</b><br />
+S.No.,Name,Email,Phone,Address,Date
+1,exampl,example@gmail.com,12345679881,xyz,"2019-12-17 18:20:49"
+2,raj,r@gmail.com,324353,xyz,"2019-12-17 18:42:53"

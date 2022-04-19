@@ -1,0 +1,20 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ([^/]+)/?$ index.php/$1 [L,QSA]
+
+</IfModule>
+
+php_value max_input_vars 6000
+php_value suhosin.get.max_vars 6000
+php_value suhosin.post.max_vars 6000
+php_value suhosin.request.max_vars 6000
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php80” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php80___lsphp .php .php8 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit

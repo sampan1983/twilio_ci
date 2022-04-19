@@ -1,0 +1,111 @@
+[29-Mar-2018 12:07:43 Etc/GMT] PHP Warning:  require_once(/path/to/vendor/autoload.php): failed to open stream: No such file or directory in /home/virtuvel/public_html/twilapp/twilio_test/1-outbound-call.php on line 3
+[29-Mar-2018 12:07:43 Etc/GMT] PHP Fatal error:  require_once(): Failed opening required '/path/to/vendor/autoload.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/virtuvel/public_html/twilapp/twilio_test/1-outbound-call.php on line 3
+[29-Mar-2018 12:09:26 Etc/GMT] PHP Fatal error:  Class 'Twilio\Rest\Client' not found in /home/virtuvel/public_html/twilapp/twilio_test/1-outbound-call.php on line 9
+[29-Mar-2018 12:10:01 Etc/GMT] PHP Warning:  require_once(/vendor/autoload.php): failed to open stream: No such file or directory in /home/virtuvel/public_html/twilapp/twilio_test/1-outbound-call.php on line 3
+[29-Mar-2018 12:10:01 Etc/GMT] PHP Fatal error:  require_once(): Failed opening required '/vendor/autoload.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/virtuvel/public_html/twilapp/twilio_test/1-outbound-call.php on line 3
+[29-Mar-2018 12:11:07 Etc/GMT] PHP Fatal error:  Class 'Twilio\Rest\Client' not found in /home/virtuvel/public_html/twilapp/twilio_test/1-outbound-call.php on line 9
+[29-Mar-2018 12:12:04 Etc/GMT] PHP Warning:  The use statement with non-compound name 'Twilio' has no effect in /home/virtuvel/public_html/twilapp/twilio_test/1-outbound-call.php on line 4
+[29-Mar-2018 12:12:04 Etc/GMT] PHP Parse error:  syntax error, unexpected '/', expecting ',' or ';' in /home/virtuvel/public_html/twilapp/twilio_test/1-outbound-call.php on line 4
+[29-Mar-2018 12:15:25 Etc/GMT] PHP Fatal error:  Class 'Client' not found in /home/virtuvel/public_html/twilapp/twilio_test/1-outbound-call.php on line 9
+[29-Mar-2018 12:15:32 Etc/GMT] PHP Fatal error:  Class 'Client' not found in /home/virtuvel/public_html/twilapp/twilio_test/1-outbound-call.php on line 9
+[29-Mar-2018 12:17:03 Etc/GMT] PHP Fatal error:  Class 'Twilio\Rest\Client' not found in /home/virtuvel/public_html/twilapp/twilio_test/1-outbound-call.php on line 8
+[29-Mar-2018 12:18:16 Etc/GMT] PHP Fatal error:  Class 'Twilio\Rest\Client' not found in /home/virtuvel/public_html/twilapp/twilio_test/1-outbound-call.php on line 8
+[29-Mar-2018 12:19:10 Etc/GMT] PHP Fatal error:  Uncaught exception 'Twilio\Exceptions\RestException' with message '[HTTP 400] Unable to create record: Url is not a valid url: /2-call-answered.php' in /home/virtuvel/public_html/twilapp/twilio_test/Twilio/Version.php:85
+Stack trace:
+#0 /home/virtuvel/public_html/twilapp/twilio_test/Twilio/Version.php(207): Twilio\Version->exception(Object(Twilio\Http\Response), 'Unable to creat...')
+#1 /home/virtuvel/public_html/twilapp/twilio_test/Twilio/Rest/Api/V2010/Account/CallList.php(87): Twilio\Version->create('POST', '/Accounts/ACc70...', Array, Array)
+#2 /home/virtuvel/public_html/twilapp/twilio_test/1-outbound-call.php(19): Twilio\Rest\Api\V2010\Account\CallList->create('+919634843418', '+18326391235', Array)
+#3 {main}
+  thrown in /home/virtuvel/public_html/twilapp/twilio_test/Twilio/Version.php on line 85
+[29-Mar-2018 12:20:33 Etc/GMT] PHP Fatal error:  Uncaught exception 'Twilio\Exceptions\RestException' with message '[HTTP 400] Unable to create record: Url is not a valid url: /2-call-answered.php' in /home/virtuvel/public_html/twilapp/twilio_test/Twilio/Version.php:85
+Stack trace:
+#0 /home/virtuvel/public_html/twilapp/twilio_test/Twilio/Version.php(207): Twilio\Version->exception(Object(Twilio\Http\Response), 'Unable to creat...')
+#1 /home/virtuvel/public_html/twilapp/twilio_test/Twilio/Rest/Api/V2010/Account/CallList.php(87): Twilio\Version->create('POST', '/Accounts/ACc70...', Array, Array)
+#2 /home/virtuvel/public_html/twilapp/twilio_test/1-outbound-call.php(19): Twilio\Rest\Api\V2010\Account\CallList->create('+919634843418', '+18326391235', Array)
+#3 {main}
+  thrown in /home/virtuvel/public_html/twilapp/twilio_test/Twilio/Version.php on line 85
+[29-Mar-2018 12:22:08 Etc/GMT] PHP Warning:  require_once(twilio/Services/Twilio): failed to open stream: No such file or directory in /home/virtuvel/public_html/twilapp/twilio_test/2-call-answered.php on line 4
+[29-Mar-2018 12:22:08 Etc/GMT] PHP Fatal error:  require_once(): Failed opening required 'twilio/Services/Twilio' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/virtuvel/public_html/twilapp/twilio_test/2-call-answered.php on line 4
+[29-Mar-2018 12:24:21 Etc/GMT] PHP Warning:  require_once(Services/Twilio): failed to open stream: No such file or directory in /home/virtuvel/public_html/twilapp/twilio_test/2-call-answered.php on line 4
+[29-Mar-2018 12:24:21 Etc/GMT] PHP Fatal error:  require_once(): Failed opening required 'Services/Twilio' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/virtuvel/public_html/twilapp/twilio_test/2-call-answered.php on line 4
+[29-Mar-2018 12:27:49 Etc/GMT] PHP Warning:  require_once(Services/Twilio): failed to open stream: No such file or directory in /home/virtuvel/public_html/twilapp/twilio_test/2-call-answered.php on line 4
+[29-Mar-2018 12:27:49 Etc/GMT] PHP Fatal error:  require_once(): Failed opening required 'Services/Twilio' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/virtuvel/public_html/twilapp/twilio_test/2-call-answered.php on line 4
+[29-Mar-2018 12:44:27 Etc/GMT] PHP Warning:  require_once(/home/virtuvel/public_html/twilapp/twilio_test/Twilio): failed to open stream: Numerical result out of range in /home/virtuvel/public_html/twilapp/twilio_test/2-call-answered.php on line 4
+[29-Mar-2018 12:44:27 Etc/GMT] PHP Fatal error:  require_once(): Failed opening required 'Twilio' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/virtuvel/public_html/twilapp/twilio_test/2-call-answered.php on line 4
+[29-Mar-2018 12:47:54 Etc/GMT] PHP Warning:  require_once(Services\Twilio.php): failed to open stream: No such file or directory in /home/virtuvel/public_html/twilapp/twilio_test/2-call-answered.php on line 4
+[29-Mar-2018 12:47:54 Etc/GMT] PHP Fatal error:  require_once(): Failed opening required 'Services\Twilio.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/virtuvel/public_html/twilapp/twilio_test/2-call-answered.php on line 4
+[29-Mar-2018 12:49:48 Etc/GMT] PHP Warning:  require_once(Services\Twilio.php): failed to open stream: No such file or directory in /home/virtuvel/public_html/twilapp/twilio_test/2-call-answered.php on line 4
+[29-Mar-2018 12:49:48 Etc/GMT] PHP Fatal error:  require_once(): Failed opening required 'Services\Twilio.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/virtuvel/public_html/twilapp/twilio_test/2-call-answered.php on line 4
+[29-Mar-2018 12:54:34 Etc/GMT] PHP Warning:  require_once(Services/Twilio): failed to open stream: No such file or directory in /home/virtuvel/public_html/twilapp/twilio_test/2-call-answered.php on line 5
+[29-Mar-2018 12:54:34 Etc/GMT] PHP Fatal error:  require_once(): Failed opening required 'Services/Twilio' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/virtuvel/public_html/twilapp/twilio_test/2-call-answered.php on line 5
+[29-Mar-2018 18:05:30 Etc/GMT] PHP Parse error:  syntax error, unexpected 'version' (T_STRING) in /home/virtuvel/public_html/twilapp/twilio_test/2-call-answered.php on line 1
+[29-Mar-2018 18:07:22 Etc/GMT] PHP Parse error:  syntax error, unexpected 'version' (T_STRING) in /home/virtuvel/public_html/twilapp/twilio_test/2-call-answered.php on line 1
+[29-Mar-2018 18:09:16 Etc/GMT] PHP Parse error:  syntax error, unexpected '<' in /home/virtuvel/public_html/twilapp/twilio_test/2-call-answered.php on line 2
+[29-Mar-2018 18:11:28 Etc/GMT] PHP Parse error:  syntax error, unexpected 'version' (T_STRING) in /home/virtuvel/public_html/twilapp/twilio_test/2-call-answered.php on line 4
+[29-Mar-2018 18:13:49 Etc/GMT] PHP Fatal error:  Class 'Twilio\Twiml' not found in /home/virtuvel/public_html/twilapp/twilio_test/2-call-answered.php on line 5
+[29-Mar-2018 18:15:19 Etc/GMT] PHP Fatal error:  Class 'Twilio\Twiml' not found in /home/virtuvel/public_html/twilapp/twilio_test/2-call-answered.php on line 5
+[29-Mar-2018 18:16:52 Etc/GMT] PHP Fatal error:  Class 'Twilio\Twiml' not found in /home/virtuvel/public_html/twilapp/twilio_test/2-call-answered.php on line 5
+[29-Mar-2018 18:25:35 Etc/GMT] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/virtuvel/public_html/twilapp/twilio_test/2-call-answered.php on line 2
+[29-Mar-2018 18:26:07 Etc/GMT] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/virtuvel/public_html/twilapp/twilio_test/2-call-answered.php on line 3
+[29-Mar-2018 18:39:19 Etc/GMT] PHP Warning:  require_once(/path/to/vendor/autoload.php): failed to open stream: No such file or directory in /home/virtuvel/public_html/twilapp/twilio_test/3-gather.php on line 4
+[29-Mar-2018 18:39:19 Etc/GMT] PHP Fatal error:  require_once(): Failed opening required '/path/to/vendor/autoload.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/virtuvel/public_html/twilapp/twilio_test/3-gather.php on line 4
+[29-Mar-2018 18:39:24 Etc/GMT] PHP Warning:  require_once(/path/to/vendor/autoload.php): failed to open stream: No such file or directory in /home/virtuvel/public_html/twilapp/twilio_test/3-gather.php on line 4
+[29-Mar-2018 18:39:24 Etc/GMT] PHP Fatal error:  require_once(): Failed opening required '/path/to/vendor/autoload.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/virtuvel/public_html/twilapp/twilio_test/3-gather.php on line 4
+[29-Mar-2018 18:40:43 Etc/GMT] PHP Parse error:  syntax error, unexpected '?' in /home/virtuvel/public_html/twilapp/twilio_test/3-gather.php on line 3
+[30-Mar-2018 08:02:40 Etc/GMT] PHP Notice:  Undefined variable: REQUEST in /home/virtuvel/public_html/twilapp/twilio_test/3-gather.php on line 5
+[30-Mar-2018 08:02:40 Etc/GMT] PHP Notice:  Undefined index: Digits in /home/virtuvel/public_html/twilapp/twilio_test/3-gather.php on line 11
+[30-Mar-2018 08:16:29 Etc/GMT] PHP Notice:  Undefined variable: agent_number in /home/virtuvel/public_html/twilapp/twilio_test/2-call-answered.php on line 17
+[30-Mar-2018 08:20:46 Etc/GMT] PHP Notice:  Undefined variable: agent_number in /home/virtuvel/public_html/twilapp/twilio_test/2-call-answered.php on line 17
+[30-Mar-2018 08:21:40 Etc/GMT] PHP Notice:  Undefined variable: agent_number in /home/virtuvel/public_html/twilapp/twilio_test/2-call-answered.php on line 17
+[30-Mar-2018 08:23:25 Etc/GMT] PHP Notice:  Undefined variable: agent_number in /home/virtuvel/public_html/twilapp/twilio_test/2-call-answered.php on line 17
+[30-Mar-2018 08:25:44 Etc/GMT] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/virtuvel/public_html/twilapp/twilio_test/2-call-answered.php on line 6
+[30-Mar-2018 08:25:44 Etc/GMT] PHP Notice:  Undefined variable: agent_number in /home/virtuvel/public_html/twilapp/twilio_test/2-call-answered.php on line 17
+[30-Mar-2018 08:32:10 Etc/GMT] PHP Notice:  Undefined variable: agent_number in /home/virtuvel/public_html/twilapp/twilio_test/2-call-answered.php on line 17
+[30-Mar-2018 08:35:00 Etc/GMT] PHP Notice:  Undefined variable: agent_number in /home/virtuvel/public_html/twilapp/twilio_test/2-call-answered.php on line 17
+[30-Mar-2018 09:06:40 Etc/GMT] PHP Fatal error:  Uncaught exception 'Twilio\Exceptions\RestException' with message '[HTTP 400] Unable to create record: Url is not a valid url: http://virtuemantra.com/twilapp/twilio_test/2-call-answered.php?user_number=919634843418
+&voice_file=http://virtuemantra.com/twilapp/voice_upload/1522395642.mp3&agent_number=918979312164&caller_id=18326391235' in /home/virtuvel/public_html/twilapp/twilio_test/Twilio/Version.php:85
+Stack trace:
+#0 /home/virtuvel/public_html/twilapp/twilio_test/Twilio/Version.php(207): Twilio\Version->exception(Object(Twilio\Http\Response), 'Unable to creat...')
+#1 /home/virtuvel/public_html/twilapp/twilio_test/Twilio/Rest/Api/V2010/Account/CallList.php(87): Twilio\Version->create('POST', '/Accounts/ACc70...', Array, Array)
+#2 /home/virtuvel/public_html/twilapp/twilio_test/1-outbound-call.php(39): Twilio\Rest\Api\V2010\Account\CallList->create('+919634843418', '+18326391235', Array)
+#3 {main}
+  thrown in /home/virtuvel/public_html/twilapp/twilio_test/Twilio/Version.php on line 85
+[30-Mar-2018 09:07:39 Etc/GMT] PHP Fatal error:  Uncaught exception 'Twilio\Exceptions\RestException' with message '[HTTP 400] Unable to create record: Url is not a valid url: http://virtuemantra.com/twilapp/twilio_test/2-call-answered.php?user_number=919634843418
+&voice_file=1522395642.mp3&agent_number=918979312164&caller_id=18326391235' in /home/virtuvel/public_html/twilapp/twilio_test/Twilio/Version.php:85
+Stack trace:
+#0 /home/virtuvel/public_html/twilapp/twilio_test/Twilio/Version.php(207): Twilio\Version->exception(Object(Twilio\Http\Response), 'Unable to creat...')
+#1 /home/virtuvel/public_html/twilapp/twilio_test/Twilio/Rest/Api/V2010/Account/CallList.php(87): Twilio\Version->create('POST', '/Accounts/ACc70...', Array, Array)
+#2 /home/virtuvel/public_html/twilapp/twilio_test/1-outbound-call.php(39): Twilio\Rest\Api\V2010\Account\CallList->create('+919634843418', '+18326391235', Array)
+#3 {main}
+  thrown in /home/virtuvel/public_html/twilapp/twilio_test/Twilio/Version.php on line 85
+[30-Mar-2018 09:08:25 Etc/GMT] PHP Parse error:  syntax error, unexpected '=', expecting ')' in /home/virtuvel/public_html/twilapp/twilio_test/1-outbound-call.php on line 36
+[30-Mar-2018 09:08:28 Etc/GMT] PHP Parse error:  syntax error, unexpected '=', expecting ')' in /home/virtuvel/public_html/twilapp/twilio_test/1-outbound-call.php on line 36
+[30-Mar-2018 09:29:31 Etc/GMT] PHP Notice:  Undefined variable: user_number in /home/virtuvel/public_html/twilapp/twilio_test/3-gather.php on line 19
+[30-Mar-2018 10:26:23 Etc/GMT] PHP Notice:  Undefined variable: sms_number in /home/virtuvel/public_html/twilapp/twilio_test/1-outbound-call.php on line 41
+[30-Mar-2018 11:11:57 Etc/GMT] PHP Notice:  Undefined variable: user_number in /home/virtuvel/public_html/twilapp/twilio_test/1-outbound-call.php on line 47
+[30-Mar-2018 11:11:57 Etc/GMT] PHP Notice:  Undefined variable: voice_file in /home/virtuvel/public_html/twilapp/twilio_test/1-outbound-call.php on line 47
+[30-Mar-2018 11:11:57 Etc/GMT] PHP Notice:  Undefined variable: agent_number in /home/virtuvel/public_html/twilapp/twilio_test/1-outbound-call.php on line 47
+[30-Mar-2018 11:11:57 Etc/GMT] PHP Notice:  Undefined variable: caller_id in /home/virtuvel/public_html/twilapp/twilio_test/1-outbound-call.php on line 47
+[30-Mar-2018 13:15:01 Etc/GMT] PHP Notice:  Undefined variable: user_number in /home/virtuvel/public_html/twilapp/twilio_test/1-outbound-call.php on line 47
+[30-Mar-2018 13:15:01 Etc/GMT] PHP Notice:  Undefined variable: voice_file in /home/virtuvel/public_html/twilapp/twilio_test/1-outbound-call.php on line 47
+[30-Mar-2018 13:15:01 Etc/GMT] PHP Notice:  Undefined variable: agent_number in /home/virtuvel/public_html/twilapp/twilio_test/1-outbound-call.php on line 47
+[30-Mar-2018 13:15:01 Etc/GMT] PHP Notice:  Undefined variable: caller_id in /home/virtuvel/public_html/twilapp/twilio_test/1-outbound-call.php on line 47
+[30-Mar-2018 13:30:01 Etc/GMT] PHP Notice:  Undefined variable: user_number in /home/virtuvel/public_html/twilapp/twilio_test/1-outbound-call.php on line 47
+[30-Mar-2018 13:30:01 Etc/GMT] PHP Notice:  Undefined variable: voice_file in /home/virtuvel/public_html/twilapp/twilio_test/1-outbound-call.php on line 47
+[30-Mar-2018 13:30:01 Etc/GMT] PHP Notice:  Undefined variable: agent_number in /home/virtuvel/public_html/twilapp/twilio_test/1-outbound-call.php on line 47
+[30-Mar-2018 13:30:01 Etc/GMT] PHP Notice:  Undefined variable: caller_id in /home/virtuvel/public_html/twilapp/twilio_test/1-outbound-call.php on line 47
+[05-Apr-2018 10:39:45 Etc/GMT] PHP Notice:  Undefined variable: agent_number in /home/virtuvel/public_html/twilapp/twilio_test/3-gather.php on line 20
+[05-Apr-2018 10:39:45 Etc/GMT] PHP Notice:  Undefined variable: id in /home/virtuvel/public_html/twilapp/twilio_test/3-gather.php on line 34
+[21-Apr-2018 17:52:47 Etc/GMT] PHP Notice:  Undefined index: voice_file in /home/virtuvel/public_html/twilapp/twilio_test/2-call-answered.php on line 3
+[21-Apr-2018 17:52:47 Etc/GMT] PHP Notice:  Undefined index: agent_number in /home/virtuvel/public_html/twilapp/twilio_test/2-call-answered.php on line 4
+[21-Apr-2018 17:52:47 Etc/GMT] PHP Notice:  Undefined index: user_number in /home/virtuvel/public_html/twilapp/twilio_test/3-gather.php on line 4
+[21-Apr-2018 17:52:47 Etc/GMT] PHP Notice:  Undefined index: Digits in /home/virtuvel/public_html/twilapp/twilio_test/3-gather.php on line 5
+[21-Apr-2018 17:52:47 Etc/GMT] PHP Notice:  Undefined variable: id in /home/virtuvel/public_html/twilapp/twilio_test/3-gather.php on line 34
+[21-Apr-2018 17:59:04 Etc/GMT] PHP Notice:  Undefined index: voice_file in /home/virtuvel/public_html/twilapp/twilio_test/2-call-answered.php on line 3
+[21-Apr-2018 17:59:04 Etc/GMT] PHP Notice:  Undefined index: agent_number in /home/virtuvel/public_html/twilapp/twilio_test/2-call-answered.php on line 4
+[22-Apr-2018 17:13:41 Etc/GMT] PHP Notice:  Undefined index: voice_file in /home/virtuvel/public_html/twilapp/twilio_test/2-call-answered.php on line 3
+[22-Apr-2018 17:13:41 Etc/GMT] PHP Notice:  Undefined index: agent_number in /home/virtuvel/public_html/twilapp/twilio_test/2-call-answered.php on line 4
+[22-Apr-2018 17:13:42 Etc/GMT] PHP Notice:  Undefined index: voice_file in /home/virtuvel/public_html/twilapp/twilio_test/2-call-answered.php on line 3
+[22-Apr-2018 17:13:42 Etc/GMT] PHP Notice:  Undefined index: agent_number in /home/virtuvel/public_html/twilapp/twilio_test/2-call-answered.php on line 4
+[25-Apr-2018 11:10:59 Etc/GMT] PHP Notice:  Undefined index: voice_file in /home/virtuvel/public_html/twilapp/twilio_test/2-call-answered.php on line 3
+[25-Apr-2018 11:10:59 Etc/GMT] PHP Notice:  Undefined index: agent_number in /home/virtuvel/public_html/twilapp/twilio_test/2-call-answered.php on line 4
