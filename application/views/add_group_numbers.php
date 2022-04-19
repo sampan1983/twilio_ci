@@ -1,5 +1,5 @@
 <?php include_once('header.php') ?>
-    <main class="main">
+    <main  class="main">
 
 
 
